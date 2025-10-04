@@ -1,17 +1,9 @@
-# Week 01 — 2024-09-30 to 2024-10-06
+# Week 01 — 2025-10-6 to 2024-10-12
 progress till now: https://youtu.be/VGFpV3Qj4as?t=1359
 
 ## ✅ Topics Covered
-- ...
-
-## ❌ Skipped / Pending
-- ...
-
-## things to explore
-- in AI world - infer, regression, supervised ML , unsupervised ML, clustering, outlier detection, 
-- columns are called feature in AI world
-
-supervised algorithm
+### Supervised vs Unsupervised Algorithms
+Supervised algorithm
 - Regression
     - Polynomial Regression
     - Linear Regression
@@ -20,13 +12,18 @@ supervised algorithm
     - Random forest
     - XG Boost
     - Decision trees
+
 Unsupervised Algorithm
 - DB Scan
 - K-means
 - Hierarchical clustering
 
+### ML
 ###  Deep learning or Neural network
-In Artifical neural network we these layers -> input layer, hidden layer 1 , 2 or n number of layers, output layer etc.
+In Artifical neural network we these layers:
+    -> input layer, 
+    -> hidden layer 1 , 2 or n number of layers, 
+    -> output layer etc.
 
 ### What to use when to use :
 #### Use statistical machine Learning
@@ -51,6 +48,24 @@ In Artifical neural network we these layers -> input layer, hidden layer 1 , 2 o
 
 ### Generative AI
 A category of AI 
+
+
+## ❌ Skipped / Pending
+- ...
+
+## 
+## 🔭 Things to explore
+- in AI world 
+    - infer, 
+    - regression 
+    - supervised ML  
+    - unsupervised ML 
+    - clustering 
+    - outlier detection 
+    - columns are called features
+
+
+
 
 
 

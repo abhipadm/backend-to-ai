@@ -1,7 +1,7 @@
-# AI Engineer Roadmap (Oct 2024 – Feb 2025)
+# AI Engineer Roadmap (Oct 2025 – Feb 2026)
 
 This plan is designed for a **full-time developer (9–6 job, family time)** with ~6–8 hrs/week available.
-It focuses on **Python, AI/ML concepts, GenAI, and Agentic AI**, leading to **interview readiness by Jan/Feb 2025**.
+It focuses on **Python, AI/ML concepts, GenAI, and Agentic AI**, leading to **interview readiness by Jan/Feb 2026**.
 
 ---
 
@@ -15,7 +15,7 @@ It focuses on **Python, AI/ML concepts, GenAI, and Agentic AI**, leading to **in
 
 # 📅 Week-by-Week Plan with Dates
 
-### **October 2024 — Python + AI Basics**
+### **October 2025 — Python + AI Basics**
 
 **Week 1 (Sep 30 – Oct 6)**
 
@@ -100,7 +100,7 @@ It focuses on **Python, AI/ML concepts, GenAI, and Agentic AI**, leading to **in
 
 ---
 
-### **January 2025 — Consolidation + Interview Prep**
+### **January 2026 — Consolidation + Interview Prep**
 
 **Week 13 (Dec 23 – Dec 29)**
 
@@ -128,7 +128,7 @@ It focuses on **Python, AI/ML concepts, GenAI, and Agentic AI**, leading to **in
 
 ---
 
-### **February 2025 — Stretch & Advanced (Optional if interviews ongoing)**
+### **February 2026 — Stretch & Advanced (Optional if interviews ongoing)**
 
 **Week 17 (Jan 20 – Jan 26)**
 
@@ -152,7 +152,7 @@ It focuses on **Python, AI/ML concepts, GenAI, and Agentic AI**, leading to **in
 
 ---
 
-# 🎯 Deliverables by Feb 2025
+# 🎯 Deliverables by Feb 2026
 
 * **3 GitHub projects:**
 
