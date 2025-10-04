@@ -7,7 +7,7 @@
 </p>
 
 
-This repo documents my **structured learning journey (Oct 2024 – Feb 2025)** as I transition from a decade of backend/API development into **AI engineering**.  
+This repo documents my **structured learning journey (Oct 2025 – Feb 2026)** as I transition from a decade of backend/API development into **AI engineering**.  
 It includes weekly notes, hands-on projects, and interview preparation material.
 
 ---
@@ -15,11 +15,11 @@ It includes weekly notes, hands-on projects, and interview preparation material.
 ## 📅 Roadmap
 This learning journey follows a week-by-week plan (20 weeks):
 
-- **Weeks 1–4 (Oct 2024):** Python & AI Basics  
-- **Weeks 5–8 (Nov 2024):** NLP & GenAI Fundamentals  
-- **Weeks 9–12 (Dec 2024):** GenAI Projects & Agentic AI  
-- **Weeks 13–16 (Jan 2025):** Interview Prep + Portfolio Polish  
-- **Weeks 17–20 (Feb 2025):** Stretch Goals (Deep Learning, PyTorch)
+- **Weeks 1–4 (Oct 2025):** Python & AI Basics  
+- **Weeks 5–8 (Nov 2025):** NLP & GenAI Fundamentals  
+- **Weeks 9–12 (Dec 2025):** GenAI Projects & Agentic AI  
+- **Weeks 13–16 (Jan 2026):** Interview Prep + Portfolio Polish  
+- **Weeks 17–20 (Feb 2026):** Stretch Goals (Deep Learning, PyTorch)
 
 👉 Detailed notes are in [`weeks/`](./weeks/)
 

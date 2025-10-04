@@ -50,8 +50,7 @@ In Artifical neural network we these layers -> input layer, hidden layer 1 , 2 o
 2. TensorFlow - Google
 
 ### Generative AI
-
-
+A category of AI 
 
 
 
