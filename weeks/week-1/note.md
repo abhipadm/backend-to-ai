@@ -56,7 +56,7 @@ A category of AI
 ## 
 ## 🔭 Things to explore
 - in AI world 
-    - infer, 
+    - inference - where ML generate output from input based on its training on sample data given. 
     - regression 
     - supervised ML  
     - unsupervised ML 
