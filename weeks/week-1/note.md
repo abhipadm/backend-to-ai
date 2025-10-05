@@ -47,7 +47,93 @@ In Artifical neural network we these layers:
 2. TensorFlow - Google
 
 ### Generative AI
-A category of AI 
+A category of AI example chat GPT, it can generate videos from text prompt. The whole purpose is generate content.
+#### Few examples of different types of models
+Text models
+1 . GPT - open ai
+2. Llama - meta
+3. Gemini - Google
+4. Claude - anthropic
+
+Image models
+1. Dall-E - open AI
+2. Stable Diffusion
+
+audio models
+1. Audio Gen
+2. MusicLM
+
+Video Models
+1. Sora
+
+#### Traditional AI
+Rule-based, symbolic logic
+
+#### Gen AI
+Data-driven, large-scale models
+
+#### Traditional AI VS Gen AI
+| **Feature** | **Traditional AI** | **Generative AI** |
+|--------------|--------------------|-------------------|
+| **Purpose** | Analyze, predict, classify, or make decisions | Generate new content: text, images, code, audio, etc. |
+| **Examples of Tasks** | Fraud detection, price prediction, spam filtering | Writing essays, generating images, summarizing text |
+| **Type of Output** | Fixed/structured outputs (yes/no, labels, numbers) | Creative/unstructured outputs (sentences, images, music, etc.) |
+| **Model Types** | Decision trees, linear regression, SVM, rule-based systems | Large Language Models (LLMs), GANs, diffusion models |
+| **Training** | Often supervised learning with labeled data | Pretrained on massive datasets, fine-tuned for specific tasks |
+| **Human-Like Capabilities** | Limited (task-specific logic) | High (can mimic human writing, art, reasoning, conversation) |
+| **Tools / Examples** | XGBoost, Scikit-Learn models, rule engines | GPT, DALL·E, Claude, Stable Diffusion, Gemini |
+
+ ### Large Language Model (LLM)
+ - Based on transformer architecture 
+ - Use embeddings + attention mechanisms
+
+Examples of LLMs
+- GPt for chatGPT
+- PaLM2 - by google
+- LLaMA - by meta
+- Claude - Anthropic aws
+
+LLM use another technique RLHF - Reinforcement Learning with Human Feedback
+to help the LLM to correct on human aspect like what toxic or not
+
+### AI Agents & Agentic AI
+You can two types of application using LLM, - Workflows & Agents
+
+**Workflow** - are system where LLms and tools are orchestrated through predefined code paths
+ - Workflows again divides into two types:
+    - RAG system
+    - Tool augmented system
+
+
+**Agents** - are systems where LLMs dynamically direct their own processes and tools usage, maintaining control over how they accomplish tasks.
+- Goal oriented Planning
+- give access to tools and Mermory or data
+- And it do action autonomous decision based on the data
+
+
+Ai Agent - can perceive. its environment, make decisions, and take actions to achieve specific goals
+
+Agentic AI - refers to an AI system having one or more advanced agents that operate with autonomy, reason through complex tasks, and proactively take multi-step actions to accomplish goals -without needing detailed instructions
+
+Different types of ChatBot
+- Rag chatbot -> Reactive to a question
+- Tool Augmented Chatbot - Capability of RAG + tool use
+- Agentic AI - Capability of Tool Augmented Chatbot + Reasoning, Planning and Proactivity.
+
+GEn AI - it is one component of AI AGentic AI
+
+| **Aspect** | **Generative AI** | **Agentic AI** |
+|-------------|------------------|----------------|
+| **Core Purpose** | Create new content (text, images, code, etc.) | Autonomously reason, plan, and act toward goals without needing step-by-step instructions |
+| **Output Type** | Unstructured content | Multi-step actions, proactive decisions, evolving plans |
+| **Autonomy** | ❌ No autonomy (waits for each prompt) | ✅ High autonomy (initiates actions when needed) |
+| **Planning / Reasoning** | ❌ No (or minimal) planning | ✅ Multi-step reasoning and planning |
+| **Tool Use** | Rare or external (e.g., via plugins/APIs) | ✅ Uses tools strategically to fulfill complex tasks |
+| **Proactivity** | ❌ Always reactive | ✅ Proactive — can initiate tasks when appropriate |
+| **Examples** | ChatGPT, DALL·E, Midjourney | HR automation agent that plans onboarding, handles leave logistics, etc. |
+
+
+
 
 
 ## ❌ Skipped / Pending
@@ -63,6 +149,10 @@ A category of AI
     - clustering 
     - outlier detection 
     - columns are called features
+    - the term "Stochastic"
+    - RAG - Retrieval Augmented generation
+    - tool augmented Chatbot 
+    - no - low code tools : -  N8N , Zapier
 
 
 
