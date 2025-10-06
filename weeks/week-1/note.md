@@ -293,14 +293,14 @@ while count < 3:
 ---
 
 ## ✅ Completed Topics
-
-- [x] Supervised vs Unsupervised Learning
-- [x] Deep Learning Fundamentals
-- [x] Neural Network Architectures
-- [x] Generative AI Overview
-- [x] LLMs and Transformer Architecture
-- [x] AI Agents vs Workflows
-- [x] Traditional AI vs Modern AI Approaches
+- [x] AI Basic
+   - [x] Supervised vs Unsupervised Learning
+   - [x] Deep Learning Fundamentals
+   - [x] Neural Network Architectures
+   - [x] Generative AI Overview
+   - [x] LLMs and Transformer Architecture
+   - [x] AI Agents vs Workflows
+   - [x] Traditional AI vs Modern AI Approaches
 - [x] Install Anaconda installation
 - [x] Python basics (variables, lists, dicts, loops); 
 
