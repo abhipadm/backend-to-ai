@@ -207,10 +207,87 @@ RAG Chatbot → Tool Augmented Chatbot → Agentic AI
 ---
 
 ## � Code Snippets & Examples
+#### Variable
+```python
+# Variables
+name = "Abhi"
+age = 30
+height = 1.78
+
+# Printing values
+print(name, age, height)
+
+- Variable names are case-sensitive
+- Can contain letters, numbers, and underscores
+- Should start with a letter or underscore
+
+```
+
+#### Data Types
+
+| Type    | Example            | Description        |
+| ------- | ------------------ | ------------------ |
+| `int`   | `10`               | Whole number       |
+| `float` | `10.5`             | Decimal            |
+| `str`   | `"Hello"`          | Text               |
+| `bool`  | `True`, `False`    | Logical values     |
+| `list`  | `[1, 2, 3]`        | Ordered collection |
+| `dict`  | `{"key": "value"}` | Key-value pairs    |
 
 ```python
-# Placeholder for code examples
-# Add your practice code and experiments here
+x = 42
+y = 3.14
+name = "AI Engineer"
+is_ready = True
+
+```
+#### Lists - Lists store multiple values in order and are mutable
+
+```python
+skills = ["Python", "ML", "API", "Agentic AI"]
+
+# Access elements
+print(skills[0])   # Python
+print(skills[-1])  # Agentic AI
+
+# Modify
+skills.append("LangChain")
+skills.remove("API")
+
+# Loop through
+for skill in skills:
+    print(skill)
+```
+#### Dictionaries
+- Dictionaries store key-value pairs
+```python
+developer = {
+    "name": "Abhi",
+    "role": "Backend Developer",
+    "experience": 10
+}
+
+# Access values
+print(developer["name"])     # Abhi
+# Add new key
+developer["speciality"] = "AI"
+# Loop through keys & values
+for key, value in developer.items():
+    print(f"{key}: {value}")
+
+```
+#### Loops
+##### For Loop - Iterates over sequences (lists, strings, etc.)
+``` python
+for i in range(5):
+    print("Iteration:", i)
+```
+#### While Loop
+```python
+count = 0
+while count < 3:
+    print("Count:", count)
+    count += 1
 ```
 
 ---
@@ -224,10 +301,10 @@ RAG Chatbot → Tool Augmented Chatbot → Agentic AI
 - [x] LLMs and Transformer Architecture
 - [x] AI Agents vs Workflows
 - [x] Traditional AI vs Modern AI Approaches
+- [x] Install Anaconda installation
+- [x] Python basics (variables, lists, dicts, loops); 
 
 ## 🔄 Pending Topics
 
-- [ ] Practical implementation examples
-- [ ] Detailed framework comparisons
-- [ ] Real-world use case studies
+- [ ] Write script to parse JSON + CSV
 
