@@ -290,6 +290,77 @@ while count < 3:
     count += 1
 ```
 
+#### Mini task to read json & csv using in build python lib
+✅ Correct use of json.load() - Perfect choice!
+✅ with open() statement - This is the Python equivalent of C#'s using statement
+✅ Clean function structure - Simple and readable
+✅ Good docstring - Documentation is important!
+
+json.load() vs json.loads() - Key Difference:
+Think of it like this (coming from C#):
+
+json.load() - Loads from a file-like object
+```python
+# From an open file
+with open('data.json', 'r') as file:
+    data = json.load(file)  # Takes a file object
+```
+
+json.loads() - Loads from a string (the 's' stands for 'string')
+```python
+# From a string
+json_string = '{"name": "John", "age": 30}'
+data = json.loads(json_string)  # Takes a string
+```
+
+Union[str, Path] - "Either This OR That"
+What it means: The parameter can accept either a string or a Path object. C# Analogy: It's like method overloading, but in one parameter:
+``` python
+// C# - you'd need two methods
+public void ReadFile(string filePath) { ... }
+public void ReadFile(Path filePath) { ... }
+
+// Python - one method accepts both types
+def read_json_file(file_path: Union[str, Path]):
+
+# caller can use any of the below
+# Both of these work:
+read_json_file("../data/sample.json")           # str
+read_json_file(Path("../data/sample.json"))     # Path object
+```
+
+Optional[Any] - "Either Something OR None"
+What it means: The function returns either some data or None.
+breakdown:
+Optional[T] = Union[T, None] (shorthand)
+Any = any Python type (dict, list, string, number, etc.)
+
+```python
+// C# nullable reference types
+public Dictionary<string, object>? ReadJsonFile(string path)
+{
+    // Can return Dictionary or null
+}
+
+// Python equivalent
+def read_json_file(path: str) -> Optional[dict[str, Any]]:
+    # Can return dict or None
+```
+
+Modern Python Alternative (Python 3.10+):
+``` python
+# Instead of Union, you can use the | operator:
+def read_json_file(file_path: str | Path) -> dict | list | None:
+
+
+
+
+
+
+
+
+
+
 ---
 
 ## ✅ Completed Topics
