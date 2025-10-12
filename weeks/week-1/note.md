@@ -352,15 +352,10 @@ Modern Python Alternative (Python 3.10+):
 # Instead of Union, you can use the | operator:
 def read_json_file(file_path: str | Path) -> dict | list | None:
 
-
-
-
-
-
-
-
-
-
+# when using option argument its better to use Optional
+```
+### Code
+[Json and CSV reader & writer code examples](https://github.com/abhipadm/backend-to-ai/tree/main/weeks/week-1/code)
 ---
 
 ## ✅ Completed Topics
@@ -374,8 +369,7 @@ def read_json_file(file_path: str | Path) -> dict | list | None:
    - [x] Traditional AI vs Modern AI Approaches
 - [x] Install Anaconda installation
 - [x] Python basics (variables, lists, dicts, loops); 
+- [x] Write script to parse JSON + CSV
 
-## 🔄 Pending Topics
 
-- [ ] Write script to parse JSON + CSV
 
