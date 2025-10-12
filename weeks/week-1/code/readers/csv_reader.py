@@ -66,6 +66,10 @@ if __name__ == "__main__":
         print("No data found or error reading the CSV file.")
     
     # Test writing to a new CSV file
+    print("\n" + "="*50)
+    print("Testing CSV Writer with Auto-Directory Creation and read-back verification")
+    print("\n")
+
     new_employees = [
         {"name": "Charlie", "role": "Manager"},
         {"name": "Diana", "role": "Designer"}
@@ -75,7 +79,7 @@ if __name__ == "__main__":
         print("Successfully wrote new_employees.csv")
     else:
         print("Failed to write new_employees.csv")
-    print("="*50 + "\n")
+    print("\n" + "-"*50)
 
     # Read back the written file to verify
     verified_data = read_csv_as_dicts("../data/output/new_employees.csv")
