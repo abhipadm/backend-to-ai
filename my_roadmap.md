@@ -17,18 +17,17 @@ It focuses on **Python, AI/ML concepts, GenAI, and Agentic AI**, leading to an i
 
 ### **October 2025 — Python + AI Basics**
 
-**Week 1 (Oct 06 – Oct 12)**
+**Week 1 (Oct 06 – Oct 12)** - DONE
 
 * Watch: [AI Basics](https://youtu.be/VGFpV3Qj4as)
 * Python setup: install Anaconda, VSCode/Jupyter.
 * Python basics: variables, lists, dicts, loops.
 * Mini-task: Write Python script to parse JSON + CSV.
 
-**Week 2 (Oct 13 – Oct 19)**
+**Week 2 (Oct 13 – Oct 19)** - In Progress
 
-* Python: functions, modules, file I/O.
-* Practice with small exercises (LeetCode Easy in Python).
-* Mini-task: CSV summarizer (avg, min, max of dataset).
+
+
 
 **Week 3 (Oct 20 – Oct 26)**
 
