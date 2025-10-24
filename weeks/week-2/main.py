@@ -17,8 +17,9 @@ from pathlib import Path
 src_path = Path(__file__).parent / 'src'
 sys.path.insert(0, str(src_path))
 
-from src.readers import read_csv_as_dicts, write_csv_from_dicts
-from src.readers import read_json_file, write_json_file
+from src.file_handlers.csv_handler import read_csv_as_dicts, write_csv_from_dicts
+from src.file_handlers.json_handler import read_json_file, write_json_file
+from src.analyzers.csv_analyzer import analyse_csv_data
 
 def main():
     """Main demonstration function for Week 2 concepts."""
@@ -30,12 +31,14 @@ def main():
     # Demonstrate module imports and function usage
     print("\n1. Module Import Demo:")
     print("✅ Successfully imported from custom modules!")
-    print("   - readers.csv_reader")
-    print("   - readers.json_reader")
+    print("   - file_handlers.csv_handler")
+    print("   - file_handlers.json_handler")
     
     # Load and display data using our modules
     print("\n2. CSV Data Loading Demo:")
-    employees = read_csv_as_dicts("data/sample.csv")
+    # Use correct path relative to main.py location
+    data_path = Path(__file__).parent / "data" / "sample.csv"
+    employees = read_csv_as_dicts(str(data_path))
     
     if employees:
         print(f"✅ Loaded {len(employees)} employee records")
@@ -49,17 +52,44 @@ def main():
     print("   - File reading: isolated function")
     print("   - Data processing: dedicated functions") 
     print("   - Error handling: consistent across modules")
+    print("\n" + "="*60)
+
+    # Analyze salary data
+    print("\n💰 SALARY ANALYSIS:")
+    salary_stats = analyse_csv_data(employees, "salary")
+    if salary_stats:
+        print(f"  • Total employees: {salary_stats['row_count']}")
+        print(f"  • Valid salary records: {salary_stats.get('non_null_count', 'N/A')}")
+        print(f"  • Average salary: ${salary_stats.get('mean', 0):,.2f}")
+        print(f"  • Minimum salary: ${salary_stats.get('min', 0):,.2f}")
+        print(f"  • Maximum salary: ${salary_stats.get('max', 0):,.2f}")
+    
+    # Analyze experience data
+    print("\n📈 EXPERIENCE ANALYSIS:")
+    exp_stats = analyse_csv_data(employees, "experience")
+    if exp_stats:
+        print(f"  • Valid experience records: {exp_stats.get('non_null_count', 'N/A')}")
+        print(f"  • Average experience: {exp_stats.get('mean', 0):.1f} years")
+        print(f"  • Minimum experience: {exp_stats.get('min', 0)} years")
+        print(f"  • Maximum experience: {exp_stats.get('max', 0)} years")
+    
+    print("\n" + "="*50)
+    print("🎉 Week 2 Mini-task: CSV Summarizer - COMPLETED!")
+    print("✅ Professional data analysis with error handling")
+    print("✅ Clean, maintainable code structure")
+    print("✅ Comprehensive statistical calculations")
     
     print("\n" + "="*60)
     print("Week 2 Module Structure:")
     print("src/")
-    print("  ├── __init__.py          # Package initialization")
-    print("  ├── readers/             # File I/O module")
+    print("  ├── __init__.py              # Package initialization")
+    print("  ├── file_handlers/           # File I/O module")
     print("  │   ├── __init__.py")
-    print("  │   ├── json_reader.py")
-    print("  │   └── csv_reader.py")
-    print("  └── analyzers/           # Data analysis module (next)")
-    print("      └── __init__.py")
+    print("  │   ├── json_handler.py     # JSON operations")
+    print("  │   └── csv_handler.py      # CSV operations")
+    print("  └── analyzers/              # Data analysis module")
+    print("      ├── __init__.py")
+    print("      └── csv_analyzer.py     # Statistical analysis")
     print("="*60)
     
     return employees

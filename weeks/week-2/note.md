@@ -41,10 +41,10 @@ week-2/
 - [x] **Organized code into logical modules (readers, analyzers)**
 - [x] **Set up clean import structure and namespacing**
 - [x] **Migrated all functionality from Week 1 successfully**
+- [x] **Build CSV summarizer (avg, min, max, median)**
+- [x] **Create main.py demo showcasing Week 2 functionality**
 
 ### 🔄 In Progress
-- [ ] **Build CSV summarizer (avg, min, max, median)**
-- [ ] **Create main.py demo showcasing Week 2 functionality**
 - [ ] **Add unit tests for new analyzer module**
 
 ### 📋 Todo
@@ -126,6 +126,18 @@ Mike,DevOps Engineer,4,70000,Pune
 - **Statistics by role** or location
 - **Data validation** and error handling
 
+``` python
+# data cleaning code 
+non_null_values = [row[column_name] for row in csv_data if row[column_name] not in (None, '', 'NA')]
+
+# Without list comprehension :
+non_null_values = []
+for row in csv_data:
+    value = row[column_name]
+    if value not in (None, '', 'NA'):
+        non_null_values.append(value)
+
+```
 ---
 
 ## 🧪 Testing Strategy
