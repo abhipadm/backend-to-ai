@@ -1,7 +1,7 @@
 # Week 3 Learning Notes - Python OOP & NumPy Fundamentals
 
-**Dates:** Oct 20 – Oct 26, 2025  
-**Status:** 🚀 Ready to Start  
+**Dates:** Feb 04 – Feb 10, 2026  
+**Status:** 🔄 In Progress (75% Complete)  
 **Focus:** Object-Oriented Programming, NumPy arrays, vector operations, exception handling
 
 ---
@@ -13,24 +13,14 @@ week-3/
 ├── main.py                    # Week 3 demo & OOP showcase
 ├── note.md                    # This file - learning documentation
 ├── oop/                       # Object-Oriented Programming practice
-│   ├── __init__.py           # Package initialization
-│   ├── classes_basics.py     # Class definitions and methods
-│   ├── inheritance.py        # Inheritance and polymorphism  
-│   ├── exceptions.py         # Custom exceptions and error handling
-│   └── employee_system.py    # Complete OOP example
-├── numpy_practice/           # NumPy learning and exercises
+│   ├── person.py             # ✅ Complete Person class with properties
+│   └── context_manager_demo.py # ✅ Context manager implementation
+├── numpy_demos/              # NumPy learning and exercises
 │   ├── __init__.py           # NumPy package
-│   ├── arrays_basics.py      # Array creation and manipulation
-│   ├── vector_operations.py  # Mathematical operations
-│   ├── data_analysis.py      # Statistical operations
-│   └── mini_task.py          # Week 3 mini-task implementation
-├── tests/                    # Unit tests for Week 3
-│   ├── __init__.py           # Test package
-│   ├── test_oop_classes.py   # OOP functionality tests
-│   └── test_numpy_ops.py     # NumPy operations tests
-└── data/                     # Sample data for NumPy practice
-    ├── sample_data.csv       # Numerical datasets
-    └── vectors.json          # Vector data for operations
+│   └── vector_ops.py         # ✅ Complete vector operations (20 tests)
+└── tests/                    # Unit tests for Week 3
+    ├── __init__.py           # Test package
+    └── test_vector_ops.py    # ✅ 20/20 tests passing!
 ```
 
 ---
@@ -46,13 +36,16 @@ week-3/
 
 ### ✅ Completed
 
+#### **Python OOP (Person Class)**
+- [x] Class definition with `__init__` constructor
+- [x] InComplete Week 3 documentation**
+- [ ] **Create main.py demo showcasing all learnings**
 
-### 🔄 In Progress
-- [ ] **OOP Fundamentals Study** - Classes, constructors, destructors, context managers
 
-
-### 📋 Todo
-- [ ] **Python Classes & Objects**
+### 📋 Todo  
+- [ ] **Review and practice OOP inheritance concepts** (optional deepening)
+- [ ] **Explore NumPy broadcasting** (optional advanced topic)
+- [ ] **Week 4 preparation: Pandas basics
   - Class definition and instantiation
   - Instance methods and attributes
   - Class methods and static methods
@@ -87,6 +80,240 @@ week-3/
 
 ---
 
+## 🧮 NumPy Vector Operations - Complete Learning Guide
+
+### **What Are Vectors?**
+
+A **vector** is simply a list of numbers. In ML/AI, vectors represent:
+- **Features** of data (e.g., [height, weight, age])
+- **Word embeddings** (e.g., "king" → [0.2, 0.5, -0.3, ...])
+- **Model weights** and parameters
+- **Data points** in space
+
+```python
+# Example: A person's features
+person = np.array([175, 70, 30])  # height(cm), weight(kg), age
+# This is a 3-dimensional vector
+```
+
+### **Why NumPy Instead of Python Lists?**
+
+```python
+# Python list (slow) - requires loop
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+result = [list1[i] + list2[i] for i in range(len(list1))]
+
+# NumPy (fast, vectorized) - no loop!
+v1 = np.array([1, 2, 3])
+v2 = np.array([4, 5, 6])
+result = v1 + v2  # 10-100x faster! ⚡
+```
+
+**NumPy is 10-100x faster** because it's written in C and uses vectorized operations.
+
+---
+
+### **Vector Operations & Their ML Applications**
+
+#### **1. Vector Addition** (`v1 + v2`)
+```python
+v1 = [1, 2, 3]
+v2 = [4, 5, 6]
+result = [5, 7, 9]  # Element-wise: [1+4, 2+5, 3+6]
+```
+**ML Use:** Combining features, updating model weights
+
+#### **2. Vector Subtraction** (`v1 - v2`)
+```python
+v1 = [5, 7, 9]
+v2 = [1, 2, 3]
+result = [4, 5, 6]  # Difference between data points
+```
+**ML Use:** Calculating errors, finding differences
+
+#### **3. Scalar Multiplication** (`vector * scalar`)
+```python
+v = [1, 2, 3]
+result = [3, 6, 9]  # Scale entire vector
+```
+**ML Use:** Learning rate adjustment, scaling features
+
+#### **4. Dot Product** ⭐ (Most Important!)
+```python
+v1 = [1, 2, 3]
+v2 = [4, 5, 6]
+result = 1*4 + 2*5 + 3*6 = 32  # Multiply corresponding elements and sum
+```
+
+**Why it matters:**
+- **Similarity measure**: High dot product = vectors point in similar direction
+- **Neural networks**: Every neuron computes dot products!
+- **Predictions**: `output = weights · input`
+
+**Example in Neural Networks:**
+```python
+weights = [0.5, 0.3, 0.2]  # Model weights
+inputs = [10, 20, 30]       # Your data
+prediction = np.dot(weights, inputs)  # = 17 (this is what neurons do!)
+```
+
+#### **5. Magnitude (Length of Vector)**
+```python
+v = [3, 4]
+magnitude = √(3² + 4²) = 5
+```
+**ML Use:** Distance measurement, normalization, understanding vector "strength"
+
+#### **6. Normalization** (Make magnitude = 1)
+```python
+v = [3, 4]
+magnitude = 5
+normalized = [3/5, 4/5] = [0.6, 0.8]  # Now length = 1
+```
+**Why it matters:**
+- **Put all features on same scale** (age vs salary vs height)
+- **Required for many ML algorithms**
+- **Word embeddings are normalized**
+
+**Example:**
+```python
+# Before normalization
+person1 = [175, 70000]  # height(cm), salary($) - salary dominates!
+
+# After normalization - both features equally important
+person1_norm = normalize(person1)  # Fair comparison
+```
+
+#### **7. Cosine Similarity** ⭐ (Measures angle between vectors)
+```python
+v1 = [1, 2, 3]
+v2 = [2, 4, 6]  # Same direction as v1
+cosine_sim = dot(v1, v2) / (magnitude(v1) * magnitude(v2))
+            = 1.0  # Perfectly similar!
+```
+
+**Returns:** -1 (opposite) to +1 (identical)
+
+**Why it matters:**
+- **Text similarity**: "king" vs "queen"
+- **Recommendation systems**: Similar users/products
+- **Duplicate detection**
+
+**Real Example:**
+```python
+# Word embeddings
+king = [0.5, 0.8, 0.2]
+queen = [0.6, 0.7, 0.3]  # Similar to king
+car = [-0.3, 0.1, -0.5]  # Different
+
+cosine_similarity(king, queen)  # ≈ 0.95 (very similar!)
+cosine_similarity(king, car)    # ≈ 0.10 (not similar)
+```
+
+#### **8. Euclidean Distance** (Distance between points)
+```python
+point1 = [0, 0]
+point2 = [3, 4]
+distance = √((3-0)² + (4-0)²) = 5
+```
+**ML Use:** K-Nearest Neighbors (KNN), clustering (K-means), anomaly detection
+
+**Example - KNN:**
+```python
+# Find closest customer to recommend similar products
+new_customer = [25, 50000]  # age, income
+customer1 = [24, 48000]  # distance = close → recommend what they like!
+customer2 = [60, 100000]  # distance = far
+```
+
+#### **9. Element-wise Multiply** (Hadamard Product)
+```python
+v1 = [1, 2, 3]
+v2 = [4, 5, 6]
+result = [1*4, 2*5, 3*6] = [4, 10, 18]  # Different from dot product!
+```
+**ML Use:** Feature gating in neural networks, attention mechanisms, masking
+
+#### **10. Mean Vector**
+```python
+v1 = [1, 2, 3]
+v2 = [4, 5, 6]
+v3 = [7, 8, 9]
+mean = [4, 5, 6]  # Average of each position
+```
+**ML Use:** Finding centroids in clustering, averaging embeddings
+
+#### **11. Vector Statistics**
+```python
+v = [1, 2, 3, 4, 5]
+stats = {
+    'mean': 3.0,      # Average
+    'median': 3.0,    # Middle value
+    'std': 1.41,      # How spread out
+    'min': 1, 'max': 5
+}
+```
+**ML Use:** Understanding data distribution, feature analysis
+
+---
+
+### **How This Connects to AI/ML**
+
+#### **Neural Network Example:**
+```python
+# Simple neuron computation
+inputs = np.array([1.0, 2.0, 3.0])     # Your data
+weights = np.array([0.5, 0.3, 0.2])    # Learned parameters
+bias = 0.1
+
+# This is what EVERY neuron does:
+output = np.dot(inputs, weights) + bias  # Dot product!
+# = 1.0*0.5 + 2.0*0.3 + 3.0*0.2 + 0.1 = 1.8
+```
+
+#### **Text Similarity Example:**
+```python
+# Word embeddings (simplified)
+doc1 = np.array([0.5, 0.8, 0.2])   # "machine learning"
+doc2 = np.array([0.6, 0.7, 0.3])   # "artificial intelligence"  
+doc3 = np.array([-0.3, 0.1, -0.5]) # "cooking recipes"
+
+# Find similar documents
+sim = cosine_similarity(doc1, doc2)  # High similarity!
+# This is how search engines work!
+```
+
+---
+
+### **Real-World Applications**
+
+| Operation | AI/ML Application |
+|-----------|-------------------|
+| **Dot Product** | Neural network layers, predictions |
+| **Cosine Similarity** | Recommendation systems, text search, RAG |
+| **Euclidean Distance** | KNN, clustering, anomaly detection |
+| **Normalization** | Feature scaling, embeddings |
+| **Magnitude** | Regularization, vector strength |
+
+---
+
+### **Key Takeaways** 🎯
+
+1. **Vectors = Data** in ML (everything becomes numbers)
+2. **Dot product = similarity/prediction** (most used operation)
+3. **Cosine similarity** finds similar items (text, embeddings)
+4. **Distance** measures how far apart things are
+5. **Normalization** puts everything on same scale
+
+**When you see:**
+- "Neural network" → Think: lots of dot products
+- "Embeddings" → Think: vectors representing words/images
+- "Similarity" → Think: cosine similarity or distance
+- "Features" → Think: vectors of numbers
+
+---
+
 ## 🏗️ Technical Architecture
 
 ### **OOP Design Principles**
@@ -95,20 +322,23 @@ week-3/
 - **Polymorphism:** Same interface, different implementations
 - **Abstraction:** Simplify complex systems with clear interfaces
 
-### **NumPy Integration Strategy**
+### **Professional Code Structure**
 ```python
-# Combining OOP with NumPy for powerful data structures
-class DataAnalyzer:
-    def __init__(self, data: np.ndarray):
-        self._data = data
+class VectorOperations:
+    """
+    Professional structure:
+    - Static methods (no instance needed)
+    - Type hints (clear expectations)
+    - Comprehensive docstrings
+    - Error handling
+    """
     
-    def calculate_statistics(self) -> dict:
-        return {
-            'mean': np.mean(self._data),
-            'std': np.std(self._data),
-            'min': np.min(self._data),
-            'max': np.max(self._data)
-        }
+    @staticmethod
+    def dot_product(v1: np.ndarray, v2: np.ndarray) -> float:
+        # Check dimensions match
+        if v1.shape != v2.shape:
+            raise ValueError("Dimensions must match")
+        return np.dot(v1, v2)
 ```
 
 ### **Exception Strategy**
