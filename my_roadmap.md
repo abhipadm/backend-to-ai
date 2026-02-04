@@ -1,4 +1,5 @@
-# AI Engineer Roadmap (Oct 2025 – Feb 2026)
+# AI Engineer Roadmap (Oct 2025 – Jun 2026)
+**Updated:** February 4, 2026
 
 This plan is designed for a **full-time developer (9–6 job, family time)** with ~6–8 hrs/week available.
 It focuses on **Python, AI/ML concepts, GenAI, and Agentic AI**, leading to an intermediate AI Engineer **.
@@ -17,148 +18,174 @@ It focuses on **Python, AI/ML concepts, GenAI, and Agentic AI**, leading to an i
 
 ### **October 2025 — Python + AI Basics**
 
-**Week 1 (Oct 06 – Oct 12)** - DONE
+**Week 1 (Oct 06 – Oct 12)** ✅ **COMPLETED**
 
-* Watch: [AI Basics](https://youtu.be/VGFpV3Qj4as)
-* Python setup: install Anaconda, VSCode/Jupyter.
-* Python basics: variables, lists, dicts, loops.
-* Mini-task: Write Python script to parse JSON + CSV.
+* Watch: [AI Basics](https://youtu.be/VGFpV3Qj4as) ✅
+* Python setup: install Anaconda, VSCode/Jupyter ✅
+* Python basics: variables, lists, dicts, loops ✅
+* Mini-task: Write Python script to parse JSON + CSV ✅
 
-**Week 2 (Oct 13 – Oct 19)** - In Progress
+**Week 2 (Oct 13 – Oct 26)** ✅ **COMPLETED**
 
-
-
-
-**Week 3 (Oct 20 – Oct 26)**
-
-* Python: classes, OOP basics, exceptions.
-* Libraries: intro to NumPy.
-* Mini-task: Vector operations with NumPy.
-
-**Week 4 (Oct 27 – Nov 2)**
-
-* Libraries: Pandas basics (read CSV, filter, groupby).
-* Visualization: Matplotlib.
-* Mini-project: Titanic dataset analysis notebook.
+* Python functions, modules & packages ✅
+* File I/O handlers (JSON, CSV) ✅
+* CSV data analyzer (statistics) ✅
+* Unit testing & error handling ✅
+* LeetCode: Two Sum, Valid Anagram, Contains Duplicate ✅
 
 ---
 
-### **November 2025 — NLP + GenAI Fundamentals**
+### **February 2026 — Python OOP & Data Science Foundation**
 
-**Week 5 (Nov 3 – Nov 9)**
+**Week 3 (Feb 04 – Feb 10)** 🔄 **IN PROGRESS**
 
-* NLP basics: regex, tokenization.
-* Libraries: NLTK, SpaCy.
-* Mini-task: Extract entities from text using SpaCy.
+* Python: classes, OOP basics, exceptions (50% done)
+* Libraries: intro to NumPy
+* Mini-task: Vector operations with NumPy
+* **Bonus Project:** Simple Wikipedia Search Agent (GPT/Claude API)
 
-**Week 6 (Nov 10 – Nov 16)**
+**Week 4 (Feb 11 – Feb 17)**
 
-* Text preprocessing: stemming, lemmatization.
-* Representations: Bag-of-Words, TF-IDF.
-* Mini-task: Build simple text classifier (Naïve Bayes).
-
-**Week 7 (Nov 17 – Nov 23)**
-
-* Embeddings: Word2Vec, transformer embeddings.
-* Intro to vector databases: FAISS basics.
-* Mini-task: Store embeddings + retrieve similar sentences.
-
-**Week 8 (Nov 24 – Nov 30)**
-
-* GenAI fundamentals: LLMs, embeddings, RAG.
-* Watch: [GenAI Free Course](https://youtu.be/d4yCWBGFCEs).
-* Mini-project: PDF Q&A bot with embeddings + ChromaDB.
+* Libraries: Pandas basics (read CSV, filter, groupby)
+* Visualization: Matplotlib
+* Mini-project: Titanic dataset analysis notebook
+* **Bonus Project:** AI News & Blog Aggregator Agent
 
 ---
 
-### **December 2025 — GenAI Projects + Agentic AI Fundamentals**
+### **February-March 2026 — NLP + GenAI Fundamentals**
 
-**Week 9 (Dec 1 – Dec 7)**
+**Week 5 (Feb 18 – Feb 24)**
 
-* LangChain basics: chains, tools.
-* RAG pipelines with LangChain.
-* Mini-task: Q&A bot with LangChain + FAISS.
+* NLP basics: regex, tokenization
+* Libraries: NLTK, SpaCy
+* Mini-task: Extract entities from text using SpaCy
 
-**Week 10 (Dec 8 – Dec 14)**
+**Week 6 (Feb 25 – Mar 03)**
 
-* Agentic AI fundamentals: GenAI vs Agents vs Agentic AI.
-* Watch: [What is Agentic AI?](https://youtu.be/15_pppse4fY).
-* Mini-task: Build simple rule-based agent.
+* Text preprocessing: stemming, lemmatization
+* Representations: Bag-of-Words, TF-IDF
+* Mini-task: Build simple text classifier (Naïve Bayes)
 
-**Week 11 (Dec 15 – Dec 21)**
+**Week 7 (Mar 04 – Mar 10)**
 
-* LangGraph crash course.
-* Stateful agent examples.
-* Mini-task: LangGraph agent with memory.
+* Embeddings: Word2Vec, transformer embeddings
+* Intro to vector databases: FAISS basics
+* Mini-task: Store embeddings + retrieve similar sentences
 
-**Week 12 (Dec 22 – Dec 28)**
+**Week 8 (Mar 11 – Mar 17)**
 
-* CrewAI: multi-agent workflows.
-* Mini-task: Researcher + Writer agent collaboration.
-* Mini-project: “AI Research Assistant” (multi-agent system).
-
----
-
-### **January 2026 — Consolidation + Interview Prep**
-
-**Week 13 (Dec 29 – Jan 04)**
-
-* Review: ML basics (regression, classification).
-* Practice explaining ML vs DL vs GenAI.
-* Mini-task: Flashcards or notes for interview Q&A.
-
-**Week 14 (Jan 05 – Jan 11)**
-
-* System design for AI apps (APIs + AI integration).
-* Practice: “Design a chatbot API.”
-* Mock interview with ChatGPT (AI system design focus).
-
-**Week 15 (Jan 12 – Jan 18)**
-
-* Portfolio polish: clean up GitHub repos.
-* Write 1–2 blog posts / LinkedIn posts about projects.
-* Mini-task: Record demo video of a project.
-
-**Week 16 (Jan 19 – Jan 25)**
-
-* Full mock interview week.
-* Review core projects (PDF Q&A, LangChain RAG bot, CrewAI assistant).
-* Light study + Q&A sessions.
+* GenAI fundamentals: LLMs, embeddings, RAG
+* Watch: [GenAI Free Course](https://youtu.be/d4yCWBGFCEs)
+* Mini-project: PDF Q&A bot with embeddings + ChromaDB
 
 ---
 
-### **February 2026 — Stretch & Advanced (Optional if interviews ongoing)**
+### **March-April 2026 — GenAI Projects + Agentic AI Fundamentals**
 
-**Week 17 (Jan 26 – Feb 1)**
+**Week 9 (Mar 18 – Mar 24)**
 
-* Deep Learning quick tour: neural nets basics.
-* Explore PyTorch.
+* LangChain basics: chains, tools
+* RAG pipelines with LangChain
+* Mini-task: Q&A bot with LangChain + FAISS
 
-**Week 18 (Feb 2 – Feb 8)**
+**Week 10 (Mar 25 – Mar 31)**
 
-* CNNs and RNNs overview.
-* Optional project: sentiment analysis with PyTorch.
+* Agentic AI fundamentals: GenAI vs Agents vs Agentic AI
+* Watch: [What is Agentic AI?](https://youtu.be/15_pppse4fY)
+* Mini-task: Build simple rule-based agent
 
-**Week 19 (Feb 9 – Feb 15)**
+**Week 11 (Apr 01 – Apr 07)**
 
-* Continue interview prep, refine Q&A.
-* Contribute to an open-source GenAI repo.
+* LangGraph crash course
+* Stateful agent examples
+* Mini-task: LangGraph agent with memory
 
-**Week 20 (Feb 16 – Feb 22)**
+**Week 12 (Apr 08 – Apr 14)**
 
-* Wrap-up: final revision.
-* More mock interviews and project presentations.
+* CrewAI: multi-agent workflows
+* Mini-task: Researcher + Writer agent collaboration
+* Mini-project: "AI Research Assistant" (multi-agent system)
 
 ---
 
-# 🎯 Deliverables by Feb 2026
-* **3 GitHub projects:**
+### **April-May 2026 — Consolidation + Interview Prep**
 
-  1. Titanic Data Analysis (Python + Pandas).
-  2. PDF Q&A bot with RAG + embeddings.
-  3. Multi-agent “Research Assistant” with CrewAI.
-* **Interview prep notes** (ML basics, GenAI concepts, Agentic AI).
-* **LinkedIn posts/blogs** showcasing your transition into AI.
+**Week 13 (Apr 15 – Apr 21)**
+
+* Review: ML basics (regression, classification)
+* Practice explaining ML vs DL vs GenAI
+* Mini-task: Flashcards or notes for interview Q&A
+
+**Week 14 (Apr 22 – Apr 28)**
+
+* System design for AI apps (APIs + AI integration)
+* Practice: "Design a chatbot API"
+* Mock interview with ChatGPT (AI system design focus)
+
+**Week 15 (Apr 29 – May 05)**
+
+* Portfolio polish: clean up GitHub repos
+* Write 1–2 blog posts / LinkedIn posts about projects
+* Mini-task: Record demo video of a project
+
+**Week 16 (May 06 – May 12)**
+
+* Full mock interview week
+* Review core projects (PDF Q&A, LangChain RAG bot, CrewAI assistant)
+* Light study + Q&A sessions
+
+---
+
+### **May-June 2026 — Stretch & Advanced (Optional if interviews ongoing)**
+
+**Week 17 (May 13 – May 19)**
+
+* Deep Learning quick tour: neural nets basics
+* Explore PyTorch
+
+**Week 18 (May 20 – May 26)**
+
+* CNNs and RNNs overview
+* Optional project: sentiment analysis with PyTorch
+
+**Week 19 (May 27 – Jun 02)**
+
+* Continue interview prep, refine Q&A
+* Contribute to an open-source GenAI repo
+
+**Week 20 (Jun 03 – Jun 09)**
+
+* Wrap-up: final revision
+* More mock interviews and project presentations
+
+---
+
+# 🎯 Deliverables by Jun 2026
+* **5 GitHub projects:**
+
+  1. **Wikipedia Search Agent** - Simple AI agent with GPT/Claude API (Week 3)
+  2. **AI News & Blog Aggregator** - Automated content aggregation agent (Week 4)
+  3. **Titanic Data Analysis** - Python + Pandas data exploration (Week 4)
+  4. **PDF Q&A Bot** - RAG + embeddings system (Week 8)
+  5. **Multi-agent Research Assistant** - CrewAI multi-agent system (Week 12)
+* **Interview prep notes** (ML basics, GenAI concepts, Agentic AI)
+* **LinkedIn posts/blogs** showcasing your transition into AI
+
+---
+
+# 📊 Progress Summary
+
+**Current Status:** Week 3 of 20 (15% complete)
+
+**Completed Weeks:**
+- ✅ Week 1: AI Fundamentals & Python Basics
+- ✅ Week 2: Python Modules, Data Analysis & Algorithms
+
+**In Progress:**
+- 🔄 Week 3: OOP & NumPy (50% complete)
+
+**Remaining:** 17 weeks (Est. completion: June 9, 2026)
 
 ---
 
